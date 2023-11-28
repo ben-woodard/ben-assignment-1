@@ -4,9 +4,7 @@ import java.util.*;
 
 public class Assignment1 {
 	
-
-	String calcInterest () {
-		
+	String calcInterest () {		
 		//Obtain information from user // 
 		
 		Scanner scanner = new Scanner (System.in);
@@ -15,8 +13,8 @@ public class Assignment1 {
 		double convertedInvestment = Double.parseDouble(initInvestment);
 		System.out.println("Type in your yearly interest rate:");
 		String intRate = scanner.nextLine();
-		double convertedIntRate = Double.parseDouble(intRate);
-		
+		double convertedIntRate = Double.parseDouble(intRate);		
+	
 		//iterate through interest rate formula 30 times with for loop,
 		//print values in 5 year increments//
 		
@@ -41,7 +39,6 @@ public class Assignment1 {
 				System.out.println("After 25 years, you would have: " + returnValue);
 			}
 		  } 	
-		  
 		  //return string at end of the loop(i = 30);//
 		  
 		    int returnValue = (int)Math.round(newValue);
